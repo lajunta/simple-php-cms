@@ -16,7 +16,7 @@
 * 软件环境
 * php基础知识
 * Mysql基础知识
-* php中操作mysql
+* [php中操作mysql](courses/mysql_operation_in_php.md)
 * 文章管理系统概述
   * 文章管理系统的组成
   * 文章管理系统的制作过程
