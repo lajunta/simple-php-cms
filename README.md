@@ -15,7 +15,7 @@
 
 * 软件环境
 * php基础知识
-* Mysql基础知识
+* [Mysql基础知识](courses/mysql_basic.md)
 * [php中操作mysql](courses/mysql_operation_in_php.md)
 * 文章管理系统概述
   * 文章管理系统的组成
@@ -38,7 +38,7 @@
   * 整体授权
   * 部分授权
 * 文件组织与代码整理
-* 前端设计 
+* 外观设计 
   * html css 布局
   * photoshop 外观美化
 
