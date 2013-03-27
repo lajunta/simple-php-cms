@@ -18,11 +18,11 @@
 * [Mysql基础知识](courses/mysql_basic.md)
 * [php中操作mysql](courses/mysql_operation_in_php.md)
 * 文章管理系统概述
-  * 文章管理系统的组成
-  * 文章管理系统的制作过程
+  * [文章管理系统的组成](courses/makeup_of_article_system.md)
+  * [MVC的概念](courses/mvc.md)
+  * [文章管理系统的制作过程](courses/procedure_of_article_system.md)
 * 文章模块的制作
   * 数据库和数据表的建立
-  * MVC的概念
   * 文章控制器
   * 文章模块的视图
   * 文章分页
