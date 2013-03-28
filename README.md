@@ -13,7 +13,7 @@
 ##教学过程
 ---
 
-* 软件环境
+* [软件环境](courses/env.md)
 * php基础知识
 * [Mysql基础知识](courses/mysql_basic.md)
 * [php中操作mysql](courses/mysql_operation_in_php.md)
@@ -22,17 +22,12 @@
   * [MVC的概念](courses/mvc.md)
   * [文章管理系统的制作过程](courses/procedure_of_article_system.md)
 * 文章模块的制作
-  * 数据库和数据表的建立
-  * 文章控制器
-  * 文章模块的视图
-  * 文章分页
+  * [数据库和数据表的建立](courses/mysql_tables.md)
+  * [文章模块的制作](courses/mod_article.md)
 * 用户模块的制作
-  * 用户数据表的建立
-  * 用户控制器
-  * 用户视图
+  * [用户模块的制作](courses/mod_user.md)
 * 认证模块的制作
-  * 认证控制器
-  * 认证视图
+  * [认证模块的制作](courses/mod_auth.md)
 * 系统权限
   * 权限的概念
   * 整体授权
