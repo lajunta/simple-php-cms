@@ -2,25 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>更新文章</title>
+<title>用户信息</title>
 </head>
 
 <body>
-<?php
 
+<?php
 $con=mysql_connect('localhost','root','');
 mysql_select_db("phpcms");
 
-$sql="update articles set title='$_POST[title]',body='$_POST[body]',tag='$_POST[tag]',updated_at=now() where id=$_POST[id];";
+$sql="select * from users where id=$_GET[id]";
 $result=mysql_query($sql,$con);
-if($result){
-  echo "更新成功";
-}else{
-  echo "更新失败";
-}
-
-mysql_close($con);
-
+$row=mysql_fetch_array($result);
 ?>
+
+<p>登录名：<?php echo $row['login']; ?></p>
+<p>密码：<?php echo $row['password']; ?></p>
+<p>真实姓名：<?php echo $row['realname']; ?></p>
+
 </body>
 </html>

@@ -13,7 +13,7 @@
     5. update.php           #用户更新页面
     6. show.php             #用户查看页面
     7. delete.php           #用户删除
-    8. search.php           #用户搜索
+    8. search               #用户搜索　和index.php一起实现
 
 __说明:__ 
 
@@ -30,7 +30,11 @@ __说明:__
 5. [用户更新 update.php](../code/users/update.php)
 6. [用户查看 show.php](../code/users/show.php)
 7. [用户删除 delete.php](../code/users/delete.php)
-8. [用户搜索 search.php](../code/users/index.php)
+8. 用户搜索 code/users/index.php
 
 对用户模块的基本操作就是以上这些，当然你还可以根据需要写出更多的功能，为了阅读方便，最好一个功能或者操作一个网页.
 
+###作业
+
+* 在网站根目录下建立users目录，在这个目录下建立以上７个文件
+* 编写代码，分别实现用户的添加、更新、删除、列表和搜索功能

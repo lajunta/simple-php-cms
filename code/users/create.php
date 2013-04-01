@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>更新文章</title>
+<title>创建用户</title>
 </head>
 
 <body>
@@ -11,12 +11,12 @@
 $con=mysql_connect('localhost','root','');
 mysql_select_db("phpcms");
 
-$sql="update articles set title='$_POST[title]',body='$_POST[body]',tag='$_POST[tag]',updated_at=now() where id=$_POST[id];";
+$sql="insert into users(login,password,realname) values('$_POST[login]','$_POST[password]','$_POST[realname]');";
 $result=mysql_query($sql,$con);
 if($result){
-  echo "更新成功";
+  echo "添加用户成功";
 }else{
-  echo "更新失败";
+  echo "添加用户失败";
 }
 
 mysql_close($con);

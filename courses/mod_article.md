@@ -13,8 +13,8 @@
     5. update.php           #文章更新页面
     6. show.php             #文章查看页面
     7. delete.php           #文章删除
-    8. atag.php             #文章分类并列表
-    9. search.php           #文章搜索并列表
+    8. atag                 #文章分类并列表 在index.php中实现
+    9. search               #文章搜索并列表 在index.php中实现
 
 __说明:__ 
 
@@ -31,9 +31,13 @@ __说明:__
 5. [文章更新 update.php](../code/articles/update.php)
 6. [文章查看 show.php](../code/articles/show.php)
 7. [文章删除 delete.php](../code/articles/delete.php)
-8. [文章类别 atag.php](../code/articles/index.php)
-8. [文章搜索 atag.php](../code/articles/search.php)
+8. 文章类别 (../code/articles/index.php)
+9. 文章搜索 (../code/articles/search.php)
 
 对文章模块的基本操作就是以上这些，当然你还可以根据需要写出更多的功能，为了阅读方便，最好一个功能或者操作一个网页.
 
 
+###作业
+
+* 在网站根目录下建立articles目录，在这个目录下建立以上７个文件
+* 编写代码，分别实现文章的添加、更新、删除、列表和搜索功能
