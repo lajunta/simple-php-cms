@@ -11,7 +11,7 @@
   <p>登录名：  </p>
   <p>
     <label for="login"></label>
-    <input name="login" type="text" id="title" size="60" />
+    <input name="login" type="text" id="title" size="20" />
   </p>
   <p>密码：</p>
   <p>

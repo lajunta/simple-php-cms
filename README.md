@@ -21,13 +21,12 @@
   * [文章管理系统的组成](courses/makeup_of_article_system.md)
   * [MVC的概念](courses/mvc.md)
   * [文章管理系统的制作过程](courses/procedure_of_article_system.md)
-* 文章模块的制作
+* 模块的制作
   * [数据库和数据表的建立](courses/mysql_tables.md)
   * [文章模块的制作](courses/mod_article.md)
-* 用户模块的制作
   * [用户模块的制作](courses/mod_user.md)
-* 认证模块的制作
   * [认证模块的制作](courses/mod_auth.md)
+  * [代码的整理与重构](courses/code_refactor.md)
 * 系统权限
   * 权限的概念
   * 整体授权
