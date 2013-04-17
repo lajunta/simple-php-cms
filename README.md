@@ -21,26 +21,30 @@
   * [文章管理系统的组成](courses/makeup_of_article_system.md)
   * [MVC的概念](courses/mvc.md)
   * [文章管理系统的制作过程](courses/procedure_of_article_system.md)
-* 模块的制作
+* 管理模块的制作
   * [数据库和数据表的建立](courses/mysql_tables.md)
   * [文章模块的制作](courses/mod_article.md)
   * [用户模块的制作](courses/mod_user.md)
+* 站点模块的制作
   * [认证模块的制作](courses/mod_auth.md)
-  * [代码的整理与重构](courses/code_refactor.md)
-* 系统权限
-  * 权限的概念
-  * 整体授权
-  * 部分授权
-* 文件组织与代码整理
+  * [站点模块的制作](courses/mod_site.md)
 * 外观设计 
-  * html css 布局
-  * photoshop 外观美化
-
+  * [html css 布局](courses/htmlcss.md)
+  * [网页模板的制作](courses/template.md)
+  * [站点网页的制作](courses/site_pages.md)
+  * [管理网页的美化](courses/admin_pages.md)
+  * [代码的整理与重构](courses/code_refactor.md)
+* 系统授权
+  * [权限的概念](courses/acl_concept.md)
+  * [某个动作访问控制](courses/acl_action.md)
+  * [页面部分访问控制](courses/acl_partial.md)
 
 
 ##参考资料
 ---
 
+* [html 学习](http://www.w3school.com.cn/html/index.asp)
+* [css 学习](http://www.w3school.com.cn/css/index.asp)
 * [php基础知识学习](http://www.w3school.com.cn/php/index.asp)
 * [php the right way](http://wulijun.github.com/php-the-right-way/)
 * [php100视频教程](http://www.youku.com)
