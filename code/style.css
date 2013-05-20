@@ -1,0 +1,140 @@
+@charset "utf-8";
+body{
+	margin:0;
+	padding:0;
+	background-color:#F5FAFA;
+}
+#waibox {
+	width: 960px;
+	margin: 0 auto;
+	min-height:100%; /* Least height in modern Browser */
+	/*height:auto !important;  !important */
+	height:100%; /* Least height in IE <7 */
+}
+#header{
+	width:960px;
+	height:200px;
+	background-color:#FFFFFF;
+}
+#daohang{
+	width:960px;
+	height:32px;
+	background-color:#FFFFFF;	
+}
+
+#content{
+	width: 960px;
+	height:auto;
+	float:left;	
+}
+
+#leftbox{
+	width: 640px;
+	height: auto;
+	float: left;
+}
+
+#rightbox{
+	width:320px;
+	height:auto;
+	float:left;
+}
+#footer{
+	width:960px;
+	min-height:100px;
+	float:left;
+	height:100px;
+}
+
+#lbox{
+	width:300px;
+	height:200px;
+	margin:10px;
+	float:left;
+	background-color:#FFFFFF;
+}
+
+#picbox{
+	width: 300px;
+	height: 200px;
+	float:left;
+	margin:10px;
+}
+
+#rbox{
+	width:300px;
+	margin:10px;
+	height:200px;
+	float:left;
+	background-color:#FFFFFF;
+}
+
+#rbox h3,#lbox h3{
+	margin:0;
+	padding:0;
+	line-height:32px;
+	background-image:url(images/bgb.jpg);
+	background-repeat:repeat-x;
+}
+
+#daohang a{
+	float:left;
+	display:block;
+	line-height:32px;
+	text-align:center;
+	width:137px;
+	height:32px;
+	background-image:url(images/bgb.jpg);
+	background-repeat:repeat-x;
+	text-decoration:none;
+}
+
+#daohang a:hover{
+	background-image:url(images/cj_ahover.jpg);
+	text-decoration:underline;
+}
+
+#footer p{
+	text-align:center;
+	line-height:24px;
+}
+
+#content ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#content li{
+	line-height:24px;
+	padding-left:24px;
+	background-image:url(images/circleblue.jpg);
+	background-position:8px center;
+	background-repeat:no-repeat;
+	
+}
+
+#lbox a{
+	text-decoration:none;
+}
+
+#lbox a:hover{
+	text-decoration:underline;
+	color:red;
+}
+p.more{
+	text-align:right;
+	padding-right:24px;
+}
+
+#picbox p{
+	margin:0;
+	padding:0;
+}#loginbox {
+	text-align: right;
+	height: 32px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	line-height: 32px;
+}

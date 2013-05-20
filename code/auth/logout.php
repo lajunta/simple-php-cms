@@ -1,5 +1,6 @@
 <?php
-  session_start();
+  include("../core.php");
   session_destroy();
-  header('Location: ../articles/index.php');
+  header("Location:$root_url");
+
 ?>
