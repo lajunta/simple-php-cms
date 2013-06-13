@@ -1,7 +1,7 @@
 <?php session_start();
-$root_url="/jsj111";
-$con=mysql_connect('localhost','root','');
-mysql_select_db("phpcms");
+$root_url="/jsj111/lajunta";
+$con=mysql_connect('localhost','zxy','zxy');
+mysql_select_db("zxy");
 
 function is_admin(){
 	if(isset($_SESSION['admin'])){
@@ -19,9 +19,8 @@ function check_admin(){
 
 function taglist($tag,$num=5){
 	global $root_url;
-	$con=mysql_connect('localhost','root','');
-	mysql_select_db("phpcms");
-
+    $con=mysql_connect('localhost','zxy','zxy');
+     mysql_select_db("zxy");
 	$sql="select * from articles where tag='$tag'";
 	$result=mysql_query($sql,$con);
 	if($result){

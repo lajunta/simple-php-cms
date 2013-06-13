@@ -9,6 +9,14 @@
 <link href="style.css" rel="stylesheet" type="text/css" />
 <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
 <script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
+<script type="text/javascript">
+tinymce.init({
+    selector: "textarea"
+ });
+</script>
+
 <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 </head>
 
@@ -21,15 +29,15 @@
 	    <param name="wmode" value="opaque" />
 	    <param name="swfversion" value="9.0.45.0" />
 	    <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
-	    <param name="expressinstall" value="Scripts/expressInstall.swf" />
+	    <param name="expressinstall" value="../Scripts/expressInstall.swf" />
 	    <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
 	    <!--[if !IE]>-->
-	    <object type="application/x-shockwave-flash" data="images/bantou.swf" width="960" height="200">
+	    <object type="application/x-shockwave-flash" data="../images/bantou.swf" width="960" height="200">
 	      <!--<![endif]-->
 	      <param name="quality" value="high" />
 	      <param name="wmode" value="opaque" />
 	      <param name="swfversion" value="9.0.45.0" />
-	      <param name="expressinstall" value="Scripts/expressInstall.swf" />
+	      <param name="expressinstall" value="../Scripts/expressInstall.swf" />
 	      <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
 	      <div>
 	        <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
@@ -42,12 +50,13 @@
 	</div>
 <div id="daohang">
     	<a href="index.php">首页</a>
-        <a href="">班级介绍</a>
-        <a href="">新闻动态</a>
-        <a href="">学习园地</a>
-        <a href="">资料下载</a>
-        <a href="">班级日志</a>
-        <a href="">班级日志</a>    </div>
+        <a href="static/about.html">班级介绍</a>
+        <a href="<?php echo "$root_url/articles/index.php?tag=新闻动态"; ?>">新闻动态</a>
+        <a href="<?php echo "$root_url/articles/index.php?tag=学习园地"; ?>">学习园地</a>
+        <a href="<?php echo "$root_url/articles/index.php?tag=资料下载"; ?>">资料下载</a>
+        <a href="<?php echo "$root_url/articles/index.php?tag=班级日志"; ?>">班级日志</a>
+        <a href="<?php echo "$root_url/articles/index.php?tag=班级日志"; ?>">班级日志</a>
+  </div>
   <div id="loginbox">
   <?php 
 	if(isset($_SESSION['login'])){
@@ -92,6 +101,19 @@
       </div>
 	  <!-- InstanceEndEditable -->
 <div id="rightbox">
+           
+           <?php
+             if(isset($_SESSION['admin'])){
+           ?>
+           
+            <div id="rbox">
+            	<h3>管理面板</h3>
+                <p ><a href="articles/index.php">文章管理</a></p>
+                <p><a href="users/index.php">用户管理</a></p>
+      </div>
+              
+            <?php } ?>
+            
             <div id="rbox">
             	<h3>班级日志</h3>
             </div>
@@ -101,7 +123,7 @@
             <div id="rbox">
             	<h3>照片</h3>
             </div>
-        </div>
+      </div>
     </div>  
 <div id="footer">
   <p>Copyright © 属于顺德李伟强职业技术学校版权所有   <a href="http://www.lwqzx.sdedu.net/kpy/dc/gsites/jsj111/website/team.html#ksd">制作团队</a>   <a href="javascript:window.external.AddFavorite('http://localhost:8080/computernet/person_pic.html#ksd','%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8111%E7%8F%AD%E7%BA%A7%E7%BD%91%E7%AB%99')">加入收藏</a>  <a href="http://www.lwqzx.sdedu.net/kpy/dc/gsites/jsj111/website/#" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://localhost:8080/computernet/index.html');">设为主页</a><br />
